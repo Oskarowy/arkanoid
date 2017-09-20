@@ -1,8 +1,9 @@
 object Form1: TForm1
-  Left = 26
-  Top = 170
+  Left = 288
+  Top = 183
   Width = 772
   Height = 581
+  BorderIcons = [biSystemMenu, biMinimize]
   Caption = 'Form1'
   Color = clBtnFace
   UseDockManager = True
@@ -4532,14 +4533,14 @@ object Form1: TForm1
   end
   object lewo: TTimer
     Enabled = False
-    Interval = 20
+    Interval = 5
     OnTimer = lewoTimer
     Left = 56
     Top = 88
   end
   object prawo: TTimer
     Enabled = False
-    Interval = 20
+    Interval = 5
     OnTimer = prawoTimer
     Left = 96
     Top = 88

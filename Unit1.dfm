@@ -4,7 +4,7 @@ object Form1: TForm1
   Width = 772
   Height = 581
   BorderIcons = [biSystemMenu, biMinimize]
-  Caption = 'Form1'
+  Caption = 'Arkanoid'
   Color = clBtnFace
   UseDockManager = True
   DockSite = True

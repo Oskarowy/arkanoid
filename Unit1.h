@@ -19,6 +19,19 @@ __published:	// IDE-managed Components
     TImage *paddle;
     TTimer *lewo;
     TTimer *prawo;
+    TImage *Image1;
+    TImage *Image2;
+    TImage *Image3;
+    TImage *Image4;
+    TImage *Image5;
+    TImage *Image6;
+    TImage *Image7;
+    TImage *Image8;
+    TImage *Image9;
+    TImage *Image10;
+    TImage *Image11;
+    TImage *Image12;
+    TButton *Button1;
     void __fastcall timerPilkaTimer(TObject *Sender);
     void __fastcall lewoTimer(TObject *Sender);
     void __fastcall prawoTimer(TObject *Sender);
@@ -26,6 +39,7 @@ __published:	// IDE-managed Components
           TShiftState Shift);
     void __fastcall FormKeyUp(TObject *Sender, WORD &Key,
           TShiftState Shift);
+    void __fastcall Button1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
         __fastcall TForm1(TComponent* Owner);

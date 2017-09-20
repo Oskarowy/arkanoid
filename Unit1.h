@@ -16,6 +16,7 @@ __published:	// IDE-managed Components
     TShape *background;
     TImage *ball;
     TTimer *timerPilka;
+    TImage *paddle;
     void __fastcall timerPilkaTimer(TObject *Sender);
 private:	// User declarations
 public:		// User declarations

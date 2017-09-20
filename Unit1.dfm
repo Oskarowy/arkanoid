@@ -22,8 +22,8 @@ object Form1: TForm1
     Brush.Color = clGray
   end
   object ball: TImage
-    Left = 136
-    Top = 120
+    Left = 312
+    Top = 224
     Width = 32
     Height = 32
     AutoSize = True
@@ -130,6 +130,8 @@ object Form1: TForm1
     Transparent = True
   end
   object timerPilka: TTimer
+    Interval = 15
+    OnTimer = timerPilkaTimer
     Left = 56
     Top = 40
   end

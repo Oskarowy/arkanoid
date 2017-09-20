@@ -31,5 +31,36 @@ void __fastcall TForm1::timerPilkaTimer(TObject *Sender)
 
     // odbij od prawej sciany
     if(ball->Left+ball->Width+5 >= background->Width) x = -x;
+
+    // skucha!
+    if(ball->Top >= paddle->Top+paddle->Height+15)
+    {
+        timerPilka->Enabled = false;
+        ball->Visible = false;
+    }
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::lewoTimer(TObject *Sender)
+{
+    paddle->Left -= 10;    
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::prawoTimer(TObject *Sender)
+{
+    paddle->Left+=10;    
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::FormKeyDown(TObject *Sender, WORD &Key,
+      TShiftState Shift)
+{
+    if(Key == VK_LEFT) lewo->Enabled=true;
+    if(Key == VK_RIGHT) prawo->Enabled=true;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::FormKeyUp(TObject *Sender, WORD &Key,
+      TShiftState Shift)
+{
+    if(Key == VK_LEFT) lewo->Enabled=false;
+    if(Key == VK_RIGHT) prawo->Enabled=false;
 }
 //---------------------------------------------------------------------------

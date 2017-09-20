@@ -1,8 +1,8 @@
 object Form1: TForm1
   Left = 202
   Top = 120
-  Width = 701
-  Height = 474
+  Width = 772
+  Height = 581
   Caption = 'Form1'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -11,13 +11,15 @@ object Form1: TForm1
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   OldCreateOrder = False
+  OnKeyDown = FormKeyDown
+  OnKeyUp = FormKeyUp
   PixelsPerInch = 96
   TextHeight = 13
   object background: TShape
     Left = 0
     Top = 0
-    Width = 685
-    Height = 436
+    Width = 756
+    Height = 543
     Align = alClient
     Brush.Color = clGray
   end
@@ -332,6 +334,20 @@ object Form1: TForm1
     Interval = 15
     OnTimer = timerPilkaTimer
     Left = 56
+    Top = 40
+  end
+  object lewo: TTimer
+    Enabled = False
+    Interval = 20
+    OnTimer = lewoTimer
+    Left = 616
+    Top = 40
+  end
+  object prawo: TTimer
+    Enabled = False
+    Interval = 20
+    OnTimer = prawoTimer
+    Left = 656
     Top = 40
   end
 end

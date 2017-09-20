@@ -38,6 +38,11 @@ void __fastcall TForm1::timerPilkaTimer(TObject *Sender)
         timerPilka->Enabled = false;
         ball->Visible = false;
     }
+    else if (ball->Left > paddle->Left-ball->Width/2 && ball->Left < paddle->Left+paddle->Width &&
+            ball->Top+ball->Height > paddle->Top)
+            {
+                if (y>0) y=-y;
+            }
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::lewoTimer(TObject *Sender)

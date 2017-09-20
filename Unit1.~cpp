@@ -42,12 +42,12 @@ void __fastcall TForm1::timerPilkaTimer(TObject *Sender)
 //---------------------------------------------------------------------------
 void __fastcall TForm1::lewoTimer(TObject *Sender)
 {
-    paddle->Left -= 10;    
+    if(paddle->Left >10) paddle->Left -= 10;
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::prawoTimer(TObject *Sender)
 {
-    paddle->Left+=10;    
+    if(paddle->Left+paddle->Width < background->Width-10) paddle->Left+=10;    
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::FormKeyDown(TObject *Sender, WORD &Key,
